@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+
+/* ======= perpage div ==========*/
+.perPage{
+	width: 100%;
+	height: 100%;
+}
+
+
+.perPage p{
+	font-family: 'Lato', sans-serif;
+	line-height: 1.4em;
+	font-size: 1.2em;
+}
+
+
+
+
+/*======== title style and animation --- "Detective Nathan" ==========*/
+.square{
+	width: 400px;
+	height: 200px;
+	border: 3px solid #4BBE0E;
+	position: absolute;
+	top: 150px;
+	left: calc(65vw - 120px);
+	animation: squareMove 4s;
+}
+
+
+.text{
+	font-family: 'Bungee', cursive;
+	font-size: 54px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:200px;
+	left:calc(71vw - 150px);
+	text-align: center;
+	color:#4BBE0E;
+	animation: textMove 4s;
+}
+
+		@keyframes squareMove{
+			from{
+				top: -500px;
+			}
+
+			to{
+				top:150px;
+			}
+		}
+
+		@keyframes textMove{
+			from{
+				top: -500px;
+			}
+			to{
+				top: 200px;
+			}
+		}
+
+
+
+
+/*=== section style for displaying images and text ===*/
+.container section {
+  width: 100%;
+  height: 180vh;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #082307;
+}
+
+.container section:nth-child(1) .image {
+  background-image: url(../images/1st_sc-01-01.svg);
+}
+
+.container section:nth-child(2) .image{
+	background-image:url(../images/2nd.svg);
+}
+
+.container section:nth-child(3) .image{
+	background-image:url(../images/3rd.svg);
+}
+#page3 .content{
+	left:28%;
+}
+
+.container section:nth-child(4) .image{
+	background-image:url(../images/4th-01.svg);
+}
+#page4 .content{
+	left:30%;
+}
+.container section:nth-child(5) .image{
+	background-image:url(../images/5th-01.svg);
+}
+#page5 .content{
+	width: 35%;
+	left:15%;
+}
+
+.container section:nth-child(6) .image{
+	background-image:url(../images/6th.svg);
+}
+#page6 .content{
+	left:45%;
+}
+
+.container section:nth-child(7) .image{
+	background-image:url(../images/7th-01.svg);
+}
+#page7 .content{
+	width: 15%;
+	left:50%;
+}
+
+.container section:nth-child(8) .image{
+	background-image:url(../images/8th.svg);
+}
+#page8 .content{
+	width: 30%;
+}
+
+.container section:nth-child(9) .image{
+	background-image:url(../images/9th.svg);
+}
+#page9 .content{
+	width: 20%;
+	left:40%
+}
+
+
+.container section:nth-child(10) .image{
+	background-image:url(../images/10th.svg);
+}
+#page10 .content{
+	width: 20%;
+	left: 43%;
+}
+
+
+.container section:nth-child(11) .image{
+	background-image:url(../images/11th.svg);
+}
+#page11 .content{
+	width: 28%;
+}
+
+
+.container section:nth-child(12) .image{
+	background-image:url(../images/12th.svg);
+}
+#page12 .content{
+	width: 24%;
+	left:28%;
+}
+
+.container section:nth-child(13) .image{
+	background-image:url(../images/13th.svg);
+}
+#page13 .content{
+	width: 15%;
+	left:40%;
+}
+
+
+.container section:nth-child(14) .image{
+	background-image:url(../images/14th.svg);
+}
+
+.container section:nth-child(15) .image{
+	background-image:url(../images/15th.svg);
+}
+#page15 .content{
+	width: 18%;
+	left:40%;
+}
+
+
+
+.container section:nth-child(16) .image{
+	background-image:url(../images/16th.svg);
+}
+#page16 .content{
+	width: 15%;
+	left:40%;
+}
+
+
+
+.container section:nth-child(17) .image{
+	background-image:url(../images/17th.svg);
+}
+#page17 .content{
+	width: 10%;
+	left:40%;
+}
+
+
+
+.container section:nth-child(18) .image{
+	background-image:url(../images/18th.svg);
+}
+#page18 .content{
+	left: 35%;
+}
+
+
+.container section:nth-child(19) .image{
+	background-image:url(../images/20th-01.svg);
+}
+#page19 .content{
+	left:55%;
+}
+
+
+.container section:nth-child(20) .image{
+	background-image:url(../images/21st.svg);
+}
+#page20 .content{
+	
+}
+
+
+
+
+/*===for not repeting background image ===*/
+.container section .image{
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;	
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+
+
+
+
+/* for MP3 sound track */
+section embed{
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	z-index: 5;
+	margin-top: 9%;
+	display: none;
+}
+
+
+
+/*===== speaker image styling =====*/
+
+section .speaker{
+	width: 0;
+	height: 0;
+} 
+
+
+section .speaker img{
+  height: 64px;
+  width: 60px;
+  cursor: pointer;
+  position: relative;
+  top: 80px;
+  left: 80px;
+  z-index: 6;
+}
+
+.speakerplay {
+  background-position: 0 0;
+}
+
+
+
+
+
+
+/* ======  intro text which is displaying by javascript ========== */
+#intro_text{ 
+	color:#48F02A;
+	font-size: 1.1em;
+	letter-spacing: .2em;
+	position: absolute;
+	margin-top:32em;  /*has to delete*/
+	margin-left: 3em;
+}
+
+
+
+
+
+/*=========    ===============*/
+
+
+.perPage p{
+	color:white;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+.content_holder{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.content{
+	max-width: 900px;
+	position: absolute;
+	top:28%;
+	left:30%;
+	background-color: rgba(0,0,0,0.5);
+	padding:1.2%;
+}
+
+
+.c {
+	color: red;
+	font-size: 32px;
+	font-weight: 800;
+}
+
+
+
