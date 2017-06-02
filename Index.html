@@ -8,15 +8,21 @@
 <link href="css/reset.css" type="text/css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<div id="wrapper">
+  	<!--for notification--->
+	  <div id="popUp">
+		<div id="close" class="close"><i class="fa fa-times"></i></div>
+		<div id="hello"><span>Hello there!</span></div>
+		<h2>I am a notification to let you know that I display well only on landscape view in any device. Now close me and enjoy the story.</h2>
+	  </div>
+	  <div id="plus"><span>Click<br>&nbsp;&nbsp;<i class="fa fa-plus"></i></span></div>
+
 	<div class="container">
-	
 		<section>
-			
-		<embed src="mp3/typewriter.mp3" autostart="false" loop="false" id="#bgSound" > </embed>
-		
 			<div id="page1" class="perPage">
 				<div class="image" data-type="background" data-speed="12"></div>
 					<div > <!--Title Div--->
@@ -78,7 +84,6 @@
 		  </div>
 		</section>
    
-   
    		<section>
 			<div id="page6" class="perPage">
 				<div class="image" data-type="backbround" data-speed="10" data-anchor-target="#page6"></div>
@@ -102,7 +107,7 @@
 			<div id="page8" class="perPage">
 				<div class="image" data-type="backbround" data-speed="12" data-anchor-target="#page8"></div>
 					<div class="content" data-anchor-target="#page7 p">
-						<p>Just a hat! Who ever stole the cat left a hat Where the cat was.</p>
+						<p>Just a hat! Who ever stole the cat left a hat where the cat was.</p>
 					
 					</div>
 			</div>
@@ -201,7 +206,7 @@
 				<div class="image" data-type="backbround" data-speed="10" data-anchor-target="#page17"></div>
 					<div class="content" data-anchor-target="#page17 p">
 						<p>H - Hat = At
-						<span class="c">C</span>+ At = Cat</p>
+						<span id="c">C</span>+ At = Cat</p>
 					</div>
 			</div>
 		</section>
@@ -234,10 +239,23 @@
 					</div>
 			</div>
 		</section>
+		
+		<embed src="mp3/typewriter.mp3" autostart="false" loop="false" id="#bgSound" > </embed>
+		
+				<!--media query popup 
+						<div id="popup">
+							<div id="popupmsg">
+								<h2>Hello there!</h2>
+								<a id="close" href="#">&times;</a>
+								<div id="msg">
+									Thanks for visiting me. I display well only on landscape view.  
+								</div>
+							</div>
+						</div>-->
 	
    		
     </div><!--- end of container div -->
-	
+</div>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/mainJS.js"></script>
 </body>
